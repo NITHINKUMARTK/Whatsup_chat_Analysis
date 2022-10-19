@@ -16,11 +16,11 @@ from sort_dataframeby_monthorweek import *
 import plotly.express as px
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
-showWarningOnDirectExecution = false
+
 
 
 st.title("WHATSUP CHAT ANALYSIS")
-st.balloons()
+
 
 #####################################################################################################
 ### writing programe to get dataframe
@@ -358,7 +358,7 @@ if st.sidebar.button("Show Analysis"):
   ax = sns.heatmap(df.pivot_table(index = "month", columns = "period", values = "message", aggfunc = "count").fillna(0), cmap= "seismic")
   plt.yticks(rotation = "0")
   st.pyplot(fig)
-
+st.balloons()
 
 
 
