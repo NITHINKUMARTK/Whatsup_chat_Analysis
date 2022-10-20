@@ -16,6 +16,8 @@ from sort_dataframeby_monthorweek import *
 import plotly.express as px
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
+import warnings
+warnings.filterwarnings('ignore')
 
 
 st.title("WHATSUP CHAT ANALYSIS")
