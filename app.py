@@ -94,6 +94,7 @@ except:
 ################################## STARTING ANALYSIS ########################################################
 
 if st.sidebar.button("Show Analysis"):
+  st.title("Top Statistics")
   try:
     num_messages, num_words, num_mediafiles_shared, num_links = helper.fetch_stats(selected_user,df)
     col1,col2,col3,col4 = st.columns(4)
